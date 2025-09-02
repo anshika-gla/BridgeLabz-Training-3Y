@@ -14,9 +14,7 @@ public class ATMTransactions{
         int balance=0;
         for(int i=0;i<transactions.length;i++){
             balance +=transactions[i];
-            if(balance<0){
-                System.out.println("Overfraft");
-
+ 
             }
         }
         System.out.println("Final balance: " +balance);
