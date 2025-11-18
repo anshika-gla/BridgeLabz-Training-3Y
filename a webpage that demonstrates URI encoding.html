@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URI Encoding Example</title>
+</head>
+<body>
+  <h1>URI Encoding Example</h1>
+
+  <p>
+    Original URL (contains special characters):
+    <br>
+    <code>https://example.com/search?query=HTML & CSS</code>
+  </p>
+
+  <p>
+    Correctly encoded URL:
+    <br>
+    <a href="https://example.com/search?query=HTML%20%26%20CSS" target="_blank">
+      https://example.com/search?query=HTML%20%26%20CSS
+    </a>
+  </p>
+
+  <p>
+    Notes:
+    <ul>
+      <li>Space → <code>%20</code></li>
+      <li>Ampersand (&) → <code>%26</code></li>
+    </ul>
+  </p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Iframe Result</title>
+</head>
+<body>
+  <h1>Submit the Form</h1>
+
+  <!-- Form pointing to result.html, targetting the iframe -->
+  <form action="result.html" method="post" target="resultFrame">
+    <label for="name">Enter your name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>Result:</h2>
+  <!-- Iframe to display result.html -->
+  <iframe name="resultFrame" width="80%" height="150" style="border:1px solid #000;"></iframe>
+</body>
+</html>
