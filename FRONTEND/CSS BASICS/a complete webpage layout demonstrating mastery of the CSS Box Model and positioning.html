@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      position: sticky; /* sticky at top */
+      top: 0;
+      background: rgba(30, 60, 89, 0.9);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav ul li:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 80vh;
+      background: url('https://picsum.photos/id/1018/1600/900') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      padding: 1rem 2rem;
+      background: rgba(30,60,89,0.5);
+      border-radius: 10px;
+      border: 3px solid rgba(255,255,255,0.3);
+      outline: 2px solid rgba(255,255,255,0.5);
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #ffffff, #e0f7fa);
+      flex-wrap: wrap;
+    }
+
+    .about .text {
+      flex: 1;
+      min-width: 250px;
+      margin-bottom: 1rem;
+    }
+
+    .about .image {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 3px solid #1e3d59;
+    }
+
+    /* Services Section */
+    .services {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background: #f0f2f5;
+      flex-wrap: wrap;
+    }
+
+    .service-box {
+      flex: 1;
+      min-width: 250px;
+      background: rgba(30,60,89,0.1);
+      padding: 2rem;
+      border: 2px solid rgba(30,60,89,0.3);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      background: rgba(30,60,89,0.2);
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 4rem 2rem;
+      background: linear-gradient(to right, #ffffff, #ffeb3b33);
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 1rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact input:focus,
+    .contact textarea:focus {
+      border-color: #ffeb3b;
+      box-shadow: 0 0 5px rgba(255,235,59,0.5);
+      outline: none;
+    }
+
+    .contact button {
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #1e3d59;
+      color: #fff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #00796b;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(30,60,89,0.9);
+      color: #fff;
+      position: relative;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 900px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .services {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Welcome to My Portfolio</h1>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="text">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien vitae nulla posuere bibendum. Integer fringilla risus et arcu ullamcorper, a convallis lorem luctus.</p>
+      <p>Praesent eget felis sed arcu tristique aliquet. Curabitur ac ante ut odio venenatis aliquet.</p>
+    </div>
+    <div class="image">
+      <img src="https://picsum.photos/id/1025/600/400" alt="About Image">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="service-box">
+      <h3>Web Design</h3>
+      <p>Creating modern and responsive websites that look great on all devices.</p>
+    </div>
+    <div class="service-box">
+      <h3>UI/UX</h3>
+      <p>Designing user-friendly interfaces and experiences for apps and websites.</p>
+    </div>
+    <div class="service-box">
+      <h3>SEO</h3>
+      <p>Optimizing content and structure to improve search engine rankings.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2 style="text-align:center; margin-bottom:2rem;">Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 My Portfolio | All Rights Reserved
+  </footer>
+
+</body>
+</html>

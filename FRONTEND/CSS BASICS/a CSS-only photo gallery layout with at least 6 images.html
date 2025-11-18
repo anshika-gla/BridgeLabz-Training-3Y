@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Photo Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      color: #1e3d59;
+    }
+
+    /* Gallery container using CSS Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Individual gallery item */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    /* Scale image on hover */
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Caption overlay */
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(30, 60, 89, 0.8);
+      color: #fff;
+      text-align: center;
+      padding: 0.8rem 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+
+    /* Responsive adjustments (optional) */
+    @media screen and (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr; /* single column on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Photo Gallery</h1>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1015/400/300" alt="Nature 1">
+      <div class="caption">Mountain View</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1016/400/300" alt="Nature 2">
+      <div class="caption">Lake Reflection</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1018/400/300" alt="Nature 3">
+      <div class="caption">Forest Path</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1020/400/300" alt="Nature 4">
+      <div class="caption">Sunset Sky</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1024/400/300" alt="Nature 5">
+      <div class="caption">Beach View</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://picsum.photos/id/1027/400/300" alt="Nature 6">
+      <div class="caption">Snowy Mountains</div>
+    </div>
+  </div>
+
+</body>
+</html>

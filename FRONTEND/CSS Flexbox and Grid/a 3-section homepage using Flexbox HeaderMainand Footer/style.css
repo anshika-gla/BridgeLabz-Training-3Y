@@ -1,0 +1,99 @@
+/* Reset Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body setup */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around; /* Even spacing for links */
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main Section */
+main {
+  flex: 1; /* Makes main take up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Boxes */
+.box {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.box p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Hover Effect */
+.box:hover {
+  transform: rotate(2deg);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: auto; /* Keeps footer at bottom */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 90%;
+  }
+}

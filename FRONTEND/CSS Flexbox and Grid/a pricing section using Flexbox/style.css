@@ -1,0 +1,134 @@
+/* Reset Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section Styling */
+body {
+  background-color: #f4f4f4;
+}
+
+.pricing-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.pricing-section h1 {
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #333;
+}
+
+/* Flex Container */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Pricing Card Base Style */
+.pricing-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.pricing-card:nth-child(1) { animation-delay: 0.2s; }
+.pricing-card:nth-child(2) { animation-delay: 0.4s; }
+.pricing-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* Highlighted Middle Card */
+.highlight {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Hover Effect */
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Content */
+.pricing-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.price {
+  font-size: 1.8em;
+  margin: 10px 0 20px;
+  color: #007bff;
+}
+
+.highlight .price {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.highlight button {
+  background-color: white;
+  color: #007bff;
+}
+
+.highlight button:hover {
+  background-color: #e8e8e8;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Layout */
+@media (max-width: 750px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+}

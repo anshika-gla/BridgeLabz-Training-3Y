@@ -1,0 +1,79 @@
+/* Reset default margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body setup */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+}
+
+/* Page heading */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Flexbox container for boxes */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Common box styles */
+.box {
+  color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Box 1 - Fixed size (px) */
+.box1 {
+  width: 200px;
+  height: 150px;
+  background-color: #ff6b6b;
+}
+
+/* Box 2 - Percentage width + overflow + min/max */
+.box2 {
+  width: 30%;
+  min-height: 120px;
+  max-width: 300px;
+  background-color: #4dabf7;
+  overflow: auto; /* enables scroll if content exceeds box height */
+}
+
+/* Box 3 - Viewport height and em units */
+.box3 {
+  width: 15em;       /* scalable based on font size */
+  height: 30vh;      /* 30% of viewport height */
+  background-color: #51cf66;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive stacking */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}

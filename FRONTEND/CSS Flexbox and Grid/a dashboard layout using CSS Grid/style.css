@@ -1,0 +1,101 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Dashboard container grid layout */
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Sidebar + main area */
+  grid-template-rows: 70px 1fr;     /* Header + content */
+  height: 100vh;
+  grid-gap: 15px;
+}
+
+/* Header */
+.header {
+  grid-column: span 2; /* Span across both columns */
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #444;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffcc00;
+}
+
+/* Main content grid */
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr);    /* 2 rows */
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* Boxes */
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* One box spans 2 columns */
+.box3 {
+  grid-column: span 2;
+  background-color: #e8f0ff;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .box3 {
+    grid-column: span 1; /* remove span for small screens */
+  }
+}

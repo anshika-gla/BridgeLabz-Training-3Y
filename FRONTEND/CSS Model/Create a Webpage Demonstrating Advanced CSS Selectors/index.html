@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced CSS Selectors Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Advanced CSS Selectors Demonstration</h1>
+    <p>Exploring attribute selectors, pseudo-classes, pseudo-elements, and combinators.</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Attribute Selector Example</h2>
+      <form>
+        <input type="text" placeholder="Enter your name" />
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <p>Visit our secure site:</p>
+      <a href="https://example.com">Go to Secure Site</a><br>
+      <a href="http://example.org">Visit Non-Secure Site</a>
+    </section>
+
+    <section class="list-section">
+      <h2>Pseudo-classes and Pseudo-elements</h2>
+      <ul>
+        <li>HTML Basics</li>
+        <li>CSS Fundamentals</li>
+        <li>JavaScript Essentials</li>
+        <li>React Overview</li>
+        <li>Python for Beginners</li>
+      </ul>
+    </section>
+
+    <section class="combinator-section">
+      <h2>Combinator Selectors</h2>
+      <div class="parent">
+        <p>Direct child example</p>
+        <div>
+          <p>Nested descendant example</p>
+        </div>
+        <p class="sibling">This paragraph will affect next sibling</p>
+        <p>This is a sibling paragraph</p>
+        <p>Another sibling after that</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

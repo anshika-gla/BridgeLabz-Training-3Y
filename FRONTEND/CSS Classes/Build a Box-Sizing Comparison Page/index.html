@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Box-Sizing Comparison</h2>
+    <p class="description">
+      Below are two boxes with the <strong>same width (200px)</strong> and 
+      <strong>same padding (20px)</strong>.  
+      Notice how <code>box-sizing: border-box;</code> keeps the total size fixed,
+      while the default (<code>content-box</code>) grows larger due to padding and border.
+    </p>
+
+    <div class="boxes">
+      <!-- Default box-sizing: content-box -->
+      <div class="box content-box">
+        <h3>Default (content-box)</h3>
+        <p>Total size = width + padding + border</p>
+      </div>
+
+      <!-- With box-sizing: border-box -->
+      <div class="box border-box">
+        <h3>box-sizing: border-box</h3>
+        <p>Total size = fixed width (includes padding + border)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

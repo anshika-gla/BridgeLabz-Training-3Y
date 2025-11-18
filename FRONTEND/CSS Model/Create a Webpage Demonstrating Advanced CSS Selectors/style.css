@@ -1,0 +1,136 @@
+/* ================================
+   BASIC PAGE STYLING
+================================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f8fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ================================
+   ATTRIBUTE SELECTORS
+================================= */
+
+/* Select input with specific type */
+input[type="text"] {
+  border: 2px solid #3498db;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+/* Select secure links starting with https */
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Select links starting with http (non-secure) */
+a[href^="http:"] {
+  color: red;
+}
+
+/* ================================
+   PSEUDO-CLASSES
+================================= */
+
+/* Change input border when focused */
+input:focus {
+  outline: none;
+  border-color: #2ecc71;
+  background: #ecf9f1;
+}
+
+/* Change link color when hovered */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style alternate list items using nth-child */
+ul li:nth-child(odd) {
+  background: #ecf0f1;
+}
+
+/* ================================
+   PSEUDO-ELEMENTS
+================================= */
+
+/* Add symbol before each list item */
+ul li::before {
+  content: "• ";
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Add a decorative line after each section title */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #3498db;
+  margin: 8px auto;
+}
+
+/* ================================
+   COMBINATOR SELECTORS
+================================= */
+
+/* >  — Direct Child Selector */
+.parent > p {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* (space) — Descendant Selector */
+.parent div p {
+  color: #8e44ad;
+  font-style: italic;
+}
+
+/* + — Adjacent Sibling Selector */
+.sibling + p {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* ~ — General Sibling Selector */
+.sibling ~ p {
+  border-left: 3px solid #e74c3c;
+  padding-left: 10px;
+}
+
+/* ================================
+   TRANSITIONS & EXTRAS
+================================= */
+
+a, input {
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 250px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+li {
+  padding: 10px;
+  text-align: center;
+}

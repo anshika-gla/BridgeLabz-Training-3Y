@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Practice Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Selectors Practice Page</h1>
+    <p>Learn how different selectors target HTML elements in various ways!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Element Selectors</h2>
+      <p>This paragraph is styled using an <strong>element selector</strong> targeting all <code>&lt;p&gt;</code> tags.</p>
+      <p>Element selectors apply to every instance of that tag in the page.</p>
+    </section>
+
+    <section>
+      <h2>2. Class and ID Selectors</h2>
+      <p class="highlight">This paragraph uses a <strong>class selector (.highlight)</strong>.</p>
+      <p id="unique">This one uses an <strong>ID selector (#unique)</strong> and should look different!</p>
+    </section>
+
+    <section>
+      <h2>3. Attribute Selectors</h2>
+      <a href="https://example.com" target="_blank">Visit Example Website</a>
+      <a href="mailto:someone@example.com">Send Email</a>
+      <input type="text" placeholder="Type something...">
+      <input type="password" placeholder="Enter password">
+    </section>
+
+    <section>
+      <h2>4. Combinator Selectors</h2>
+      <div class="combinator-demo">
+        <p>This is a <strong>descendant</strong> of the div and will be styled.</p>
+        <p>So is this paragraph inside the same div.</p>
+      </div>
+
+      <div>
+        <p>This paragraph is a <strong>general sibling (~)</strong> of the div above.</p>
+      </div>
+
+      <div class="next-demo"></div>
+      <p>This paragraph is an <strong>adjacent sibling (+)</strong> of the div above.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <strong>Student</strong> — CSS Selectors Practice © 2025</p>
+  </footer>
+
+</body>
+</html>

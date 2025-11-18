@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazine Layout</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f5f5dc;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    .content {
+      background-color: #fff;
+      padding: 2rem;
+      column-count: 3;
+      column-gap: 2rem;
+      column-rule: 1px solid #ccc; /* adds a vertical line between columns */
+    }
+
+    h1 {
+      font-family: "Palatino Linotype", serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      column-span: all; /* heading spans across all columns */
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Image styling */
+    .content img {
+      float: left;
+      width: 150px;
+      margin: 0 1rem 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Ensure layout stays readable on smaller screens */
+    @media screen and (max-width: 900px) {
+      .content {
+        column-count: 2;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .content {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>The Wonders of Nature</h1>
+
+    <p><img src="https://picsum.photos/id/1015/200/200" alt="Nature Image">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae dolor urna. Sed tincidunt, justo a ultricies pharetra, nulla dolor suscipit arcu, ut viverra sapien urna ut risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+    <p>Curabitur lobortis, arcu eget tincidunt efficitur, justo mi dignissim est, a gravida velit arcu id nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec vitae elit quam. In vulputate purus vel urna lacinia, et scelerisque eros bibendum.</p>
+
+    <p>Nam euismod, magna id facilisis tincidunt, magna ex bibendum nulla, a dictum velit felis eget enim. Integer malesuada augue in elit pulvinar, a hendrerit justo tincidunt. Sed nec est ex. Donec eget enim in elit volutpat cursus.</p>
+
+    <p>Phasellus ac sem id nibh imperdiet dictum. Quisque ut magna at erat porttitor malesuada. Sed ut dui et nisl tempus facilisis. Morbi vitae risus euismod, porta dolor at, imperdiet orci.</p>
+
+    <p>Praesent <strong>consectetur</strong> ligula sit amet velit commodo, vel ultricies justo malesuada. Etiam a purus at lorem feugiat fermentum. Suspendisse potenti. Curabitur vel purus eget mi ullamcorper scelerisque. </p>
+
+    <p>Donec auctor libero ac nulla facilisis, a suscipit nulla dignissim. Fusce sed sapien in turpis tincidunt fringilla. Maecenas tincidunt, justo sed fermentum imperdiet, nunc est <em>molestie</em> nisl, vel facilisis lacus ex sit amet arcu.</p>
+
+  </div>
+
+</body>
+</html>

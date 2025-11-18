@@ -1,0 +1,89 @@
+/* ================================
+   BASIC PAGE STYLING
+================================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* ================================
+   BOX SECTIONS
+================================= */
+.box-section {
+  width: 320px;
+  text-align: center;
+}
+
+/* Common box styling */
+.box {
+  width: 200px;
+  height: 120px;
+  margin: 20px auto;
+  background-color: #aee1f9; /* Content area */
+  padding: 20px; /* Padding layer */
+  border: 10px solid #3498db; /* Border layer */
+  outline: 5px dashed #7f8c8d; /* Margin outline (visual only) */
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s ease;
+}
+
+/* Hover effect for better visual interaction */
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Demonstrate the two models */
+.content-box {
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+/* ================================
+   DESCRIPTION TEXT
+================================= */
+.description {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* ================================
+   FOOTER
+================================= */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">Responsive Design Principles</h1>
+
+  <div class="grid-container">
+    <div class="box">
+      <h2>Fluid Layouts</h2>
+      <p>Use percentage-based widths so elements adjust automatically to screen size.</p>
+      <code>
+        .container { width: 90%; margin: auto; }
+      </code>
+    </div>
+
+    <div class="box">
+      <h2>Flexible Media</h2>
+      <p>Images and videos should scale with their container to stay proportional.</p>
+      <code>
+        img { max-width: 100%; height: auto; }
+      </code>
+    </div>
+
+    <div class="box">
+      <h2>Breakpoints</h2>
+      <p>Use media queries to change layout and design at specific screen widths.</p>
+      <code>
+        @media (max-width: 600px) { body { font-size: 14px; } }
+      </code>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* Basic Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Grid Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Image Card Styling */
+.img-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.img-card:hover {
+  transform: translateY(-5px);
+}
+
+.img-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.4s ease;
+}
+
+/* Applying Different Filters */
+.img-card:nth-child(1) img { filter: blur(3px); }
+.img-card:nth-child(2) img { filter: grayscale(100%); }
+.img-card:nth-child(3) img { filter: sepia(100%); }
+.img-card:nth-child(4) img { filter: brightness(0.6); }
+.img-card:nth-child(5) img { filter: contrast(180%); }
+.img-card:nth-child(6) img { filter: hue-rotate(90deg); }
+
+/* Remove Filter on Hover */
+.img-card:hover img {
+  filter: none;
+}
+
+/* Captions */
+figcaption {
+  padding: 10px;
+  background: #fafafa;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive: Stack images on small screens */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

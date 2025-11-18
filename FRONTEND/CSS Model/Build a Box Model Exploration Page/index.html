@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Box Model Exploration</h1>
+    <p>Understanding how content, padding, border, and margin work together.</p>
+  </header>
+
+  <main class="container">
+    <!-- Default box model -->
+    <div class="box-section">
+      <h2>Default: <code>box-sizing: content-box;</code></h2>
+      <div class="box content-box">
+        Content Box
+      </div>
+      <p class="description">
+        Here, the total size of the element is the <strong>content width + padding + border</strong>.  
+        The box expands as padding and borders are added.
+      </p>
+    </div>
+
+    <!-- Border-box model -->
+    <div class="box-section">
+      <h2>Using: <code>box-sizing: border-box;</code></h2>
+      <div class="box border-box">
+        Border Box
+      </div>
+      <p class="description">
+        With <strong>border-box</strong>, padding and border are included in the total width and height.  
+        The element stays the same size no matter how much padding or border you add.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Box Model Demo | CSS Flexbox & Box-Sizing Explained</p>
+  </footer>
+
+</body>
+</html>

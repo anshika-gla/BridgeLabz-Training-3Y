@@ -1,0 +1,128 @@
+/* ================================
+   Basic Page Styling
+================================ */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background: #e3f2fd;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #1565c0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* ================================
+   1. Element Selector
+   Targets all <p> tags
+================================ */
+p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ================================
+   2. Class Selector (.highlight)
+   Adds background and text color
+================================ */
+.highlight {
+  background-color: #ffecb3;
+  padding: 10px;
+  border-left: 4px solid #ffb300;
+}
+
+/* ================================
+   ID Selector (#unique)
+   Styles only one unique element
+================================ */
+#unique {
+  color: #fff;
+  background-color: #26a69a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* ================================
+   3. Attribute Selectors
+   Target elements based on attributes
+================================ */
+a[href^="https"] {
+  color: #1565c0;
+  text-decoration: none;
+}
+
+a[href^="mailto"] {
+  color: #d32f2f;
+}
+
+input[type="text"] {
+  border: 2px solid #90caf9;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+input[type="password"] {
+  border: 2px solid #ef9a9a;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* ================================
+   4. Combinator Selectors
+   Demonstrates >, +, ~, and descendant
+================================ */
+
+/* Descendant selector — affects all p inside .combinator-demo */
+.combinator-demo p {
+  color: #2e7d32;
+}
+
+/* Adjacent sibling selector (+) — affects first p immediately after .next-demo */
+.next-demo + p {
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+/* General sibling (~) — affects all p that come after .combinator-demo */
+.combinator-demo ~ div p {
+  color: #ef6c00;
+  font-style: italic;
+}
+
+/* Child selector (>) example */
+section > h2 {
+  color: #1976d2;
+}
+
+/* ================================
+   Footer Styling
+================================ */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}

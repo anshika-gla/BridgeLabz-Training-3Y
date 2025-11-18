@@ -1,0 +1,88 @@
+/* Basic Setup */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: #004aad;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.cheatsheet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cheat Box Styling */
+.cheat-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  animation: fadeIn 1s ease;
+}
+
+.cheat-box h2 {
+  color: #004aad;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.cheat-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cheat-box code {
+  background-color: #f0f0f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Hover Effects */
+.cheat-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background-color: #eaf2ff;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Layout - Below 700px */
+@media (max-width: 700px) {
+  .cheatsheet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cheat-box {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .cheat-box h2 {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+  }
+
+  .cheat-box p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+}

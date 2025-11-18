@@ -1,0 +1,94 @@
+/* 🌈 Page Styling */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e3f2fd, #f9f9f9);
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🧭 Container */
+.container {
+  background: #ffffff;
+  padding: 40px 60px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+/* 🔘 Button Row */
+.button-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 🎨 Common Button Style */
+.btn {
+  padding: 14px 32px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out; /* smooth transition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+}
+
+/* 🟦 Blue Button */
+.btn-blue {
+  background-color: #007bff;
+}
+.btn-blue:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0, 91, 187, 0.4);
+}
+
+/* 🟩 Green Button */
+.btn-green {
+  background-color: #28a745;
+}
+.btn-green:hover {
+  background-color: #1e7e34;
+  transform: scale(1.1) rotate(-3deg);
+  box-shadow: 0 6px 18px rgba(30, 126, 52, 0.4);
+}
+
+/* 🟥 Red Button */
+.btn-red {
+  background-color: #dc3545;
+}
+.btn-red:hover {
+  background-color: #b21f2d;
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 6px 18px rgba(178, 31, 45, 0.4);
+}
+
+/* ✨ Focus and Active States */
+.btn:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.4);
+  outline-offset: 3px;
+}
+
+.btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}

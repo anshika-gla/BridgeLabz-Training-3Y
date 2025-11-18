@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      margin: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap; /* allows responsiveness */
+    }
+
+    .plan {
+      flex: 1 1 calc(33% - 2rem);
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      min-height: 400px; /* ensure equal height */
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+      background-color: #e0f7fa;
+    }
+
+    /* Plan headings */
+    .plan h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Feature list */
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .plan ul li {
+      margin: 0.5rem 0;
+    }
+
+    /* Price section */
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Button style */
+    .plan a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      background-color: #1e3d59;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan a:hover {
+      background-color: #00796b;
+    }
+
+    /* Highlight popular plan */
+    .plan.popular {
+      border: 3px solid #00796b;
+      background-color: #b2dfdb;
+    }
+
+    /* Responsive layout for smaller screens */
+    @media screen and (max-width: 768px) {
+      .plan {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Pricing Plans</h1>
+
+  <div class="pricing-container">
+    <!-- Basic Plan -->
+    <div class="plan">
+      <h2>Basic</h2>
+      <ul>
+        <li>5 Projects</li>
+        <li>10 GB Storage</li>
+        <li>Email Support</li>
+      </ul>
+      <div class="price">$10/month</div>
+      <a href="#">Choose Plan</a>
+    </div>
+
+    <!-- Standard Plan (Popular) -->
+    <div class="plan popular">
+      <h2>Standard</h2>
+      <ul>
+        <li>15 Projects</li>
+        <li>50 GB Storage</li>
+        <li>Priority Email Support</li>
+        <li>Analytics Dashboard</li>
+      </ul>
+      <div class="price">$25/month</div>
+      <a href="#">Choose Plan</a>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="plan">
+      <h2>Premium</h2>
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>200 GB Storage</li>
+        <li>24/7 Support</li>
+        <li>Advanced Analytics</li>
+        <li>Custom Integrations</li>
+      </ul>
+      <div class="price">$50/month</div>
+      <a href="#">Choose Plan</a>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Responsive Web Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">MyResponsiveSite</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-grid">
+
+    <!-- Section 1: Image Gallery -->
+    <section class="gallery">
+      <h2>Responsive Image Gallery</h2>
+      <div class="gallery-grid">
+        <img src="https://picsum.photos/id/1015/300/200" alt="Blur" class="blur">
+        <img src="https://picsum.photos/id/1025/300/200" alt="Grayscale" class="gray">
+        <img src="https://picsum.photos/id/1040/300/200" alt="Sepia" class="sepia">
+      </div>
+    </section>
+
+    <!-- Section 2: Responsive Design Explanation -->
+    <section class="info">
+      <h2>What is Responsive Design?</h2>
+      <p>
+        Responsive design ensures web content looks great on all devices — from phones to desktops.
+        It uses flexible layouts, scalable typography, CSS Grid, and media queries to adapt seamlessly.
+        Resize this page to see it in action!
+      </p>
+    </section>
+
+    <!-- Section 3: Cheat Sheet Preview -->
+    <section class="cheatsheet">
+      <h2>Quick CSS Cheat Sheet</h2>
+      <div class="cheat-grid">
+        <div class="cheat-box">
+          <h3>Filters</h3>
+          <p><code>filter: grayscale(100%);</code></p>
+        </div>
+        <div class="cheat-box">
+          <h3>Media Queries</h3>
+          <p><code>@media (max-width: 700px) { ... }</code></p>
+        </div>
+        <div class="cheat-box">
+          <h3>Typography</h3>
+          <p><code>font-size: clamp(1rem, 2vw, 2rem);</code></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 MyResponsiveSite | Contact: info@example.com</p>
+  </footer>
+
+</body>
+</html>

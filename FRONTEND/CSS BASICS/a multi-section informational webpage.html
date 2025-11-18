@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Paris</title>
+  <style>
+    /* Reset & global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(30, 60, 89, 0.9);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    nav a {
+      margin-left: 2em;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    main {
+      margin-top: 80px; /* avoid fixed header overlap */
+    }
+    section {
+      min-height: 100vh;
+      padding: 4em 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border-bottom: 5px solid #f0f4f8;
+    }
+
+    /* Section 1 - Intro with fixed background image (parallax-like) */
+    #intro {
+      background: url('paris1.jpg') center/cover no-repeat fixed;
+      color: #fff;
+    }
+    #intro h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    #intro p {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+
+    /* Section 2 - History with linear gradient */
+    #history {
+      background: linear-gradient(to right, #ffefba, #ffffff);
+      color: #333;
+    }
+    #history h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    #history p {
+      font-size: 1.2rem;
+    }
+
+    /* Section 3 - Attractions with radial gradient */
+    #attractions {
+      background: radial-gradient(circle, #89f7fe, #66a6ff);
+      color: #fff;
+    }
+    #attractions h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    #attractions p {
+      font-size: 1.2rem;
+    }
+
+    /* Section 4 - Modern Life with fixed background image */
+    #modern {
+      background: url('paris2.jpg') center/cover no-repeat fixed;
+      color: #fff;
+    }
+    #modern h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    #modern p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e3d59;
+      color: #fff;
+      padding: 2em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Discover Paris</h1>
+    <nav>
+      <a href="#intro">Home</a>
+      <a href="#history">History</a>
+      <a href="#attractions">Attractions</a>
+      <a href="#modern">Modern Life</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Intro -->
+    <section id="intro">
+      <h2>Welcome to Paris</h2>
+      <p>The city of lights, art, and romance. Explore the beauty and charm of one of the world's most iconic cities.</p>
+    </section>
+
+    <!-- Section 2: History with linear gradient -->
+    <section id="history">
+      <h2>Historical Landmarks</h2>
+      <p>Paris has a rich history dating back to the Roman era. From the Notre-Dame Cathedral to the Palace of Versailles, history comes alive in every corner.</p>
+    </section>
+
+    <!-- Section 3: Attractions with radial gradient -->
+    <section id="attractions">
+      <h2>Must-Visit Attractions</h2>
+      <p>Climb the Eiffel Tower, stroll along the Seine, enjoy world-class museums like the Louvre, and experience vibrant cafés.</p>
+    </section>
+
+    <!-- Section 4: Modern Life with fixed background -->
+    <section id="modern">
+      <h2>Modern Paris</h2>
+      <p>Beyond the historic streets, Paris thrives with modern architecture, fashion, technology, and cultural events that keep the city alive and dynamic.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Discover Paris | All Rights Reserved
+  </footer>
+
+</body>
+</html>

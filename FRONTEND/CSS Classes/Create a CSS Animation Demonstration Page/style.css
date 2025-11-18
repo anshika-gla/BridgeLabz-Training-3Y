@@ -1,0 +1,78 @@
+/* Page Setup */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dceefb, #f8f9fa);
+  font-family: "Poppins", sans-serif;
+}
+
+.animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* 1️⃣ Moving Box */
+.moving-box {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff;
+  border-radius: 10px;
+  animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+/* Keyframes for moving box */
+@keyframes moveBox {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+/* 2️⃣ Bouncing Ball */
+.bouncing-ball {
+  width: 70px;
+  height: 70px;
+  background-color: #ff5722;
+  border-radius: 50%;
+  animation: bounce 1.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+/* Keyframes for bouncing ball */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-120px);
+  }
+}
+
+/* 3️⃣ Color-Changing Text */
+.color-text {
+  font-size: 28px;
+  font-weight: bold;
+  animation: colorChange 4s ease-in-out infinite alternate;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+/* Keyframes for text color change */
+@keyframes colorChange {
+  0% {
+    color: #007bff;
+  }
+  50% {
+    color: #28a745;
+  }
+  100% {
+    color: #ff5722;
+  }
+}
