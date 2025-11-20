@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Startup — Landing Page (Bootstrap)</title>
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PLACEHOLDER" crossorigin="anonymous">
+
+  <style>
+    /* Small extra styles to make the demo look nicer */
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+    }
+    .feature-card { border-radius: .75rem; }
+    /* Make sure header is visually full-width */
+    .top-header { background: linear-gradient(90deg,#0d6efd22,#6610f322); }
+  </style>
+</head>
+<body>
+
+  <!-- Full-width header with navbar -->
+  <header class="top-header py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#" class="d-flex align-items-center text-decoration-none">
+        <span class="fs-4 fw-bold text-dark">AcmeStart</span>
+        <small class="ms-2 text-muted">— build fast</small>
+      </a>
+
+      <nav class="navbar navbar-expand-md p-0">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              <li class="nav-item ms-2"><a class="btn btn-sm btn-primary" href="#get-started">Get Started</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold">Build products faster with AcmeStart</h1>
+          <p class="lead text-muted">Bootstrap-powered layout that resizes perfectly across screen sizes. Use our components and utilities to prototype and ship quickly.</p>
+          <p class="d-flex gap-2">
+            <a id="get-started" href="#features" class="btn btn-primary btn-lg">Get Started</a>
+            <a href="#pricing" class="btn btn-outline-secondary btn-lg">See Pricing</a>
+          </p>
+          <div class="mt-4 small text-muted">Trusted by developers at startups and enterprises.</div>
+        </div>
+
+        <div class="col-lg-6 d-none d-lg-block text-center">
+          <!-- illustrative placeholder -- can be replaced with an SVG or image -->
+          <div class="border rounded-3 p-4 bg-light">
+            <svg width="100%" height="280" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration">
+              <rect width="600" height="280" rx="16" fill="#f8f9fa" />
+              <g transform="translate(40,40)">
+                <rect x="0" y="0" width="220" height="140" rx="8" fill="#e9ecef"/>
+                <rect x="240" y="20" width="260" height="40" rx="8" fill="#dee2e6"/>
+                <rect x="240" y="80" width="200" height="20" rx="6" fill="#dee2e6"/>
+                <circle cx="120" cy="200" r="36" fill="#e9ecef"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features using container, row, col -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-8">
+          <h2 class="h3">Why teams choose AcmeStart</h2>
+          <p class="text-muted">Responsive, accessible, and packed with utility classes that make layout trivial.</p>
+        </div>
+        <div class="col-md-4 text-md-end align-self-center">
+          <a href="#contact" class="btn btn-outline-primary">Contact Sales</a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="p-3 h-100 shadow-sm feature-card">
+            <h5 class="mb-2">Responsive Grid</h5>
+            <p class="small text-muted">Columns reflow automatically — desktop, tablet, and phone layouts handled for you.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="p-3 h-100 shadow-sm feature-card">
+            <h5 class="mb-2">Utility Classes</h5>
+            <p class="small text-muted">Spacing, alignment and display helpers reduce custom CSS.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="p-3 h-100 shadow-sm feature-card">
+            <h5 class="mb-2">Components</h5>
+            <p class="small text-muted">Buttons, navbars, cards and more — accessible and customizable.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <div class="p-3 h-100 shadow-sm feature-card">
+            <h5 class="mb-2">Fast Prototyping</h5>
+            <p class="small text-muted">Get a polished layout without reinventing the basics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & simple responsive cards -->
+  <section id="pricing" class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 border rounded-3 text-center h-100">
+            <h3 class="h5">Starter</h3>
+            <div class="display-6 fw-bold">Free</div>
+            <p class="small text-muted">Basic features for personal projects.</p>
+            <a class="btn btn-outline-primary mt-3" href="#">Choose</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 border rounded-3 text-center h-100">
+            <h3 class="h5">Pro</h3>
+            <div class="display-6 fw-bold">$12/mo</div>
+            <p class="small text-muted">Team collaboration and priority support.</p>
+            <a class="btn btn-primary mt-3" href="#">Choose</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 border rounded-3 text-center h-100">
+            <h3 class="h5">Enterprise</h3>
+            <div class="display-6 fw-bold">Custom</div>
+            <p class="small text-muted">SLA, onboarding and dedicated support.</p>
+            <a class="btn btn-outline-primary mt-3" href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <small class="text-muted">© <span id="year"></span> AcmeStart. All rights reserved.</small>
+      <div>
+        <a class="me-3 text-muted" href="#">Privacy</a>
+        <a class="text-muted" href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (Bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-PLACEHOLDER" crossorigin="anonymous"></script>
+
+  <!-- Small verification script to confirm Bootstrap utilities are active -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Simple runtime check: is "bootstrap" JS object available?
+      if (window.bootstrap) {
+        console.log('Bootstrap JS loaded — window.bootstrap available.');
+      } else {
+        console.warn('Bootstrap JS not detected on window.bootstrap (but CSS might still be applied).');
+      }
+
+      // Check a CSS utility quickly by creating an element with a Bootstrap utility class
+      var el = document.createElement('div');
+      el.className = 'd-none';
+      document.body.appendChild(el);
+      var style = window.getComputedStyle(el);
+      if (style.display === 'none') {
+        console.log('Bootstrap (or at least its CSS) appears to be applied — .d-none hides the element.');
+      } else {
+        console.warn('Utility class .d-none did not hide the element. Bootstrap CSS may not be loaded.');
+      }
+      document.body.removeChild(el);
+    });
+  </script>
+</body>
+</html>
